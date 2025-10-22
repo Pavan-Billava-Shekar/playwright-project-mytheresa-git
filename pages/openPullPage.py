@@ -5,7 +5,7 @@ from playwright.sync_api import Page
 
 class GitHubPRPage:
     """
-    Page Object for GitHub Pull Requests page.
+    Pageobject for GitHub Pull Requests page.
     Handles scraping PRs across all pages and saving them.
     """
     def __init__(self, page: Page, repo_url: str):
