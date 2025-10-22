@@ -6,18 +6,14 @@ class HomePage:
         self.url = base_url
 
     def goto(self):
-        """Open the home page in the browser."""
-        self.page.goto(self.url)
+        self.page.goto(self.url)    #Open the home page
 
     def get_all_links(self):
-        """Return a list of all hrefs on the page."""
+
+        #get list of all hrefs on the page
         return self.page.eval_on_selector_all("a", "elements => elements.map(el => el.href)")
 
     def check_links_status(self):
-        """
-        Check the HTTP status code of all links on the page.
-        Returns a tuple: (passed_links, failed_links)
-        """
         links = self.get_all_links()
         failed_links = []
         passed_links = []
@@ -35,7 +31,6 @@ class HomePage:
                 elif status == 200:
                     passed_links.append(f"{link} returned {status}")
                 else:
-                    # Optional: handle other 3xx, 1xx status codes if needed
                     passed_links.append(f"{link} returned {status}")
             except Exception as e:
                 failed_links.append(f"{link} failed with exception: {e}")

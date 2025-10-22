@@ -1,9 +1,7 @@
 from playwright.sync_api import Page, ConsoleMessage
 
 class HomePageError:
-    """
-    Page Object Model to handle page interactions and console errors.
-    """
+
     def __init__(self, page: Page):
         self.page = page
         self.console_errors = []
