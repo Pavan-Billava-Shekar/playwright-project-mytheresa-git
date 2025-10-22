@@ -1,0 +1,20 @@
+default:
+  environment: production
+  browser: chromium
+
+environments:
+  local:
+    base_url: "http://localhost:4000/fashionhub/"
+    repo_url: "https://github.com/appwrite/appwrite/pulls"
+  staging:
+    base_url: "https://staging-env/fashionhub/"
+    repo_url: "https://github.com/appwrite/appwrite/pulls"
+  production:
+    base_url: "https://pocketaces2.github.io/fashionhub/"
+    repo_url: "https://github.com/appwrite/appwrite/pulls"
+
+credentials:
+  username: "demouser"
+  password: "fashion123"
+
+
