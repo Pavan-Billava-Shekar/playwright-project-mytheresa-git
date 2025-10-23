@@ -26,6 +26,9 @@ The testcase covered in this automation are
 	can use https://github.com/appwrite/appwrite/pulls as an example product
 	Output is a list of PR in CSV format with PR name, created date and author
 
+	Note:This testcase are covered in two ways (API and UI)
+
+
 ---
 
 ## 🧰 Tech Stack
@@ -48,6 +51,8 @@ playwright-project-mytheresa-git/
 ├── pages/                 # Page Object Model classes
 ├── reports/               # Test results and reports (HTML, JSON, etc.)
 ├── tests/                 # Test cases grouped by feature or module
+│   ├── api/ 
+│   ├   └── test_login.py
 │   ├── test_login.py
 │   ├── test_console_errors.py
 │   └── ...
