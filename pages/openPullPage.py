@@ -2,7 +2,6 @@ import os
 import csv
 from playwright.sync_api import Page
 
-
 class GitHubPRPage:
 
     def __init__(self, page: Page, repo_url: str):

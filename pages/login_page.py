@@ -4,10 +4,8 @@ class LoginPage:
 
     def __init__(self, page: Page):
         self.page = page
-        # Element locators (kept internal)
         self.username_field = "#username"
         self.password_field = "#password"
-        # self.login_button = "button[type='submit']"
         self.success_indicator = "text=Welcome, testUser!"
 
     def navigate(self, base_url: str):
