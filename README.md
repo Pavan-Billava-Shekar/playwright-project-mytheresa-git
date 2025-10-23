@@ -121,7 +121,13 @@ pytest --html=reports/report.html --self-contained-html
 ```
 
 ---
+### Run Test with Any environment and Any browser
+```bash(eg: environment -production, browser - firefox)
 
+pytest --env=production --browser_name=firefox --html=report.html -v
+```
+
+---
 ## 🧩 Configuration
 
 All environment or project-specific settings are managed inside the **`config/`** directory.  
