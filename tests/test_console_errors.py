@@ -1,11 +1,8 @@
 import pytest
 from pages.home_page_error import HomePageError
 
-
 def test_console_errors(page, base_url, credentials):
-    """
-    This testcase ensures that visiting each URL does not produce console errors.
-    """
+    """Check if there are any console error in the given URL"""
     url = base_url
     base_page = HomePageError(page)
     base_page.navigate(url)
