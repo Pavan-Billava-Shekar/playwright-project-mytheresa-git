@@ -49,7 +49,7 @@ playwright-project-mytheresa-git/
 ├── reports/               # Test results and reports (HTML, JSON, etc.)
 ├── tests/                 # Test cases grouped by feature or module
 │   ├── test_login.py
-│   ├── test_checkout.py
+│   ├── test_console_errors.py
 │   └── ...
 │
 ├── conftest.py            # Global Pytest fixtures and hooks
