@@ -17,4 +17,8 @@ credentials:
   username: "demouser"
   password: "fashion123"
 
+repositories:
+  - name: appwrite
+    owner: appwrite
+    url: https://github.com/appwrite/appwrite/pulls
 

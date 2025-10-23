@@ -9,7 +9,6 @@ class HomePage:
         self.page.goto(self.url)    #Open the home page
 
     def get_all_links(self):
-
         #get list of all hrefs on the page
         return self.page.eval_on_selector_all("a", "elements => elements.map(el => el.href)")
 
